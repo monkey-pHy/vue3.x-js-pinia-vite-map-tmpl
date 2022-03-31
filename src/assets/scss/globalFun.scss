@@ -1,0 +1,24 @@
+@import './globalVal';
+//计算vw
+@function vw($px){
+  @return ($px/$vw_base)*100vw;
+}
+@function vh($px){
+  @return ($px/$vh_base)*100vh;
+}
+
+//flex布局
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
