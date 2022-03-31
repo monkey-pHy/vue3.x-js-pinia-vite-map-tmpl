@@ -1,8 +1,7 @@
 <template>
   <div class="Index-wrap"></div>
 </template>
-<script setup name="Index">
-</script>
+<script setup name="Index"></script>
 <style scoped lang="scss">
 .Index-wrap {
   position: absolute;

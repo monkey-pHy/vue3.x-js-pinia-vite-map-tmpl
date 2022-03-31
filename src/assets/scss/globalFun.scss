@@ -1,10 +1,10 @@
-@import './globalVal';
+@import "./globalVal";
 //计算vw
-@function vw($px){
-  @return ($px/$vw_base)*100vw;
+@function vw($px) {
+  @return ($px/$vw_base) * 100vw;
 }
-@function vh($px){
-  @return ($px/$vh_base)*100vh;
+@function vh($px) {
+  @return ($px/$vh_base) * 100vh;
 }
 
 //flex布局

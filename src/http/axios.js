@@ -1,5 +1,5 @@
-import axios from 'axios'
-import { ElMessage } from 'element-plus'
+import axios from "axios";
+import { ElMessage } from "element-plus";
 //axios配置
 // axios.defaults.timeout = 5000
 // axios.defaults.headers.post['Content-Type'] =
@@ -16,65 +16,65 @@ axios.interceptors.request.use(
     // 整个网点user
     // config.headers.common['Gw-User-Access-Token'] =
     //   store.getters.userAccessToken
-    return config
+    return config;
   },
   (err) => {
-    ElMessage.error('参数错误')
-    return Promise.reject(err)
+    ElMessage.error("参数错误");
+    return Promise.reject(err);
   }
-)
+);
 
 axios.interceptors.response.use(
   (res) => {
-    const response = res.data
+    const response = res.data;
     if (response.msg) {
       if (response.code === 0) {
-        ElMessage.success(response.msg)
+        ElMessage.success(response.msg);
       } else {
-        ElMessage.error(response.msg)
+        ElMessage.error(response.msg);
       }
     }
-    return response
+    return response;
   },
   (err) => {
     if (err && err.response) {
       switch (err.response.status) {
         case 401:
-          ElMessage.error('未授权，请登录')
-          window.location.href = '/#/auth/login'
-          break
+          ElMessage.error("未授权，请登录");
+          window.location.href = "/#/auth/login";
+          break;
         case 404:
           ElMessage.error(
-            '接口请求异常: ' + err.response.config.url + ', 请重试'
-          )
-          break
+            "接口请求异常: " + err.response.config.url + ", 请重试"
+          );
+          break;
         default:
-          ElMessage.error('Oops, 出错啦')
+          ElMessage.error("Oops, 出错啦");
       }
     }
-    return Promise.reject(err)
+    return Promise.reject(err);
   }
-)
+);
 
 function request(method, url, data) {
   // 处理请求的url和数据
-  data = method === 'get' ? { params: data } : data
+  data = method === "get" ? { params: data } : data;
   // 发送请求
   return new Promise((resolve, reject) => {
     axios[method](url, data)
       .then(
         (response) => {
-          resolve(response)
+          resolve(response);
         },
         (error) => {
-          reject(error)
+          reject(error);
         }
       )
       .catch((error) => {
-        reject(error)
-      })
+        reject(error);
+      });
   }).catch((error) => {
-    console.log(error)
-  })
+    console.log(error);
+  });
 }
-export { request }
+export { request };

@@ -9,23 +9,19 @@
            src="@assets/img/map/cancel-fullscreen-btn.png"
            alt="">
     </div> -->
-    <div class="3d-btn"
-         @click="modeControl">
-      {{modeFlag?'3D':'2D'}}</div>
-    <div class="zoom-up-btn"
-         @click="changeMapZoom('up')">+</div>
-    <div class="zoom-down-btn"
-         @click="changeMapZoom('down')">-</div>
-    <div class="navi-btn"
-         @click="">
-      <img src="@assets/img/map/navi-btn.png"
-           alt="">
+    <div class="3d-btn" @click="modeControl">
+      {{ modeFlag ? "3D" : "2D" }}
+    </div>
+    <div class="zoom-up-btn" @click="changeMapZoom('up')">+</div>
+    <div class="zoom-down-btn" @click="changeMapZoom('down')">-</div>
+    <div class="navi-btn" @click="">
+      <img src="@assets/img/map/navi-btn.png" alt="" />
     </div>
   </div>
 </template>
 <script setup name="MapController">
-import { ref, } from 'vue';
-import * as mapGlobalConfig from '@global/mapGlobalConfig.js'
+import { ref } from "vue";
+import * as mapGlobalConfig from "@global/mapGlobalConfig.js";
 
 // let isFullScreen = false;
 let modeFlag = ref(true);
@@ -55,20 +51,20 @@ let modeFlag = ref(true);
 // }
 
 //地图模式选择（3D/2D)
-function modeControl () {
+function modeControl() {
   modeFlag.value = !modeFlag.value;
   window.map.easeTo({
     pitch: modeFlag.value ? mapGlobalConfig.mapConfig.pitch : 0,
-    bearing: 0
-  })
+    bearing: 0,
+  });
 }
 
 //地图缩放
-function changeMapZoom (type) {
+function changeMapZoom(type) {
   let curZoom = window.map.getZoom();
-  if (type === 'up') {
+  if (type === "up") {
     if (curZoom < 17) {
-      window.map.zoomIn()
+      window.map.zoomIn();
     }
   } else {
     if (curZoom > 4) {

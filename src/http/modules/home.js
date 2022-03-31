@@ -1,10 +1,10 @@
-import * as urlGlobal from '../urlGlobal.js'
-import { request } from '../axios.js'
+import * as urlGlobal from "../urlGlobal.js";
+import { request } from "../axios.js";
 function requestTest(params) {
   return request(
-    'post',
+    "post",
     urlGlobal.getHourlyIndexCompare,
     JSON.stringify(params)
-  )
+  );
 }
-export { requestTest }
+export { requestTest };

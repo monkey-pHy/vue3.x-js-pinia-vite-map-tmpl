@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
 console.log(import.meta.env.VITE_APP_SERVER);
 </script>
 

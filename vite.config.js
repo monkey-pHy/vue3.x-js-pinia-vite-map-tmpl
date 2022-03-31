@@ -43,11 +43,11 @@ export default defineConfig(({ command, mode }) => {
       assetsDir: "assets",
       rollupOptions: {
         output: {
-            chunkFileNames: 'assets/js/[name]-[hash].js',
-            entryFileNames: 'assets/js/[name]-[hash].js',
-            assetFileNames: 'assets/[ext]/name-[hash].[ext]'
-        }
-      }
+          chunkFileNames: "assets/js/[name]-[hash].js",
+          entryFileNames: "assets/js/[name]-[hash].js",
+          assetFileNames: "assets/[ext]/name-[hash].[ext]",
+        },
+      },
     },
     server: {
       host: "0.0.0.0",
