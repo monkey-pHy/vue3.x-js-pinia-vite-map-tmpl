@@ -1,3 +1,11 @@
+/*
+ * @Description:
+ * @Author:
+ * @Date: 2022-03-31 16:38:17
+ * @LastEditTime: 2022-03-31 17:00:23
+ * @LastEditors: PengHeyan
+ * @Usage:
+ */
 import { resolve } from "path"; // 主要用于alias文件路径别名
 import { defineConfig, loadEnv } from "vite";
 import VueSetupExtend from "vite-plugin-vue-setup-extend";

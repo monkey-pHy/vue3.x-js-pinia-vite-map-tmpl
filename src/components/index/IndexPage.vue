@@ -1,7 +1,15 @@
+<!--
+ * @Description: 
+ * @Author: 
+ * @Date: 2022-03-31 17:10:31
+ * @LastEditTime: 2022-03-31 17:45:28
+ * @LastEditors: PengHeyan
+ * @Usage: 
+-->
 <template>
   <div class="Index-wrap"></div>
 </template>
-<script setup name="Index"></script>
+<script setup name="IndexPage"></script>
 <style scoped lang="scss">
 .Index-wrap {
   position: absolute;

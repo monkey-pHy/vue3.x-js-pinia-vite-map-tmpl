@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-03-31 14:45:16
- * @LastEditTime: 2022-03-31 15:42:42
+ * @LastEditTime: 2022-03-31 17:45:47
  * @LastEditors: PengHeyan
  * @Usage: 
 -->
@@ -10,7 +10,7 @@
   <div class="home-wrap">
     <Map></Map>
     <MapController></MapController>
-    <Navi></Navi>
+    <NaviBar></NaviBar>
     <RouterView />
     <!-- </ScreenAdapter> -->
   </div>
@@ -19,7 +19,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import Map from "@components/map/Map.vue";
 import MapController from "@components/map/MapController.vue";
-import Navi from "@components/navi/Navi.vue";
+import NaviBar from "@components/navi/NaviBar.vue";
 // // import ScreenAdapter from '@components/screenAdapter/ScreenAdapter'
 import { requestTest } from "@http/modules/home.js";
 import { onMounted, getCurrentInstance, ref, reactive } from "vue";

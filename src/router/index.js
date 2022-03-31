@@ -1,6 +1,14 @@
+/*
+ * @Description:
+ * @Author:
+ * @Date: 2022-03-31 17:10:32
+ * @LastEditTime: 2022-03-31 17:45:16
+ * @LastEditors: PengHeyan
+ * @Usage:
+ */
 import { createRouter, createWebHashHistory } from "vue-router";
 import Login from "@views/Login.vue";
-import Index from "@components/index/Index.vue";
+import Index from "@components/index/IndexPage.vue";
 const routes = [
   {
     path: "/",

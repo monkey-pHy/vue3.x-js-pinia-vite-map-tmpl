@@ -1,7 +1,7 @@
 <script setup name="Login">
 import { UserFilled, Lock } from "@element-plus/icons-vue";
-import { useRoute, useRouter } from "vue-router";
-import { ref, onMounted, getCurrentInstance, reactive } from "vue";
+import { useRouter } from "vue-router";
+import { reactive } from "vue";
 const router = useRouter();
 const state = reactive({
   userName: "",
@@ -20,16 +20,16 @@ const login = () => {
       <div>
         <user-filled class="icon-style" />
         <input
-          type="text"
           v-model="state.userName"
+          type="text"
           placeholder="请输入用户名"
         />
       </div>
       <div>
         <lock class="icon-style" />
         <input
-          type="password"
           v-model="state.passsWord"
+          type="password"
           placeholder="请输入密码"
         />
       </div>

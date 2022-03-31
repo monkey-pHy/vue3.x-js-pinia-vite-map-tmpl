@@ -1,7 +1,7 @@
 <template>
   <div class="navi-wrap"></div>
 </template>
-<script setup name="Navi"></script>
+<script setup name="NaviBar"></script>
 <style scoped lang="scss">
 .navi-wrap {
   position: absolute;

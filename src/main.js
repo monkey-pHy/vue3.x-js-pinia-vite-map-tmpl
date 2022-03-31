@@ -1,3 +1,11 @@
+/*
+ * @Description:
+ * @Author:
+ * @Date: 2022-03-31 16:38:17
+ * @LastEditTime: 2022-03-31 17:00:01
+ * @LastEditors: PengHeyan
+ * @Usage:
+ */
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 

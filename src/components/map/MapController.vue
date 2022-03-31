@@ -14,7 +14,7 @@
     </div>
     <div class="zoom-up-btn" @click="changeMapZoom('up')">+</div>
     <div class="zoom-down-btn" @click="changeMapZoom('down')">-</div>
-    <div class="navi-btn" @click="">
+    <div class="navi-btn">
       <img src="@assets/img/map/navi-btn.png" alt="" />
     </div>
   </div>
