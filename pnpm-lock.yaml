@@ -12,6 +12,7 @@ specifiers:
   cross-env: ^7.0.3
   cz-conventional-changelog: ^3.3.0
   cz-customizable: ^6.3.0
+  echarts: ^5.3.1
   element-plus: ^2.0.2
   eslint: ^8.3.0
   eslint-config-prettier: ^8.3.0
@@ -19,6 +20,8 @@ specifiers:
   eslint-plugin-vue: ^8.1.1
   husky: ^7.0.4
   lint-staged: ^12.1.2
+  lodash: ^4.17.21
+  moment: ^2.29.1
   pinia: ^2.0.11
   prettier: ^2.5.0
   sass: ~1.32.6
@@ -33,7 +36,10 @@ dependencies:
   '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/0.2.7_vue@3.2.31
   '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.6
   axios: registry.npmmirror.com/axios/0.26.1
+  echarts: registry.npmmirror.com/echarts/5.3.1
   element-plus: registry.npmmirror.com/element-plus/2.1.7_1a412d14def5ff5ca1122000e4bee666
+  lodash: registry.npmmirror.com/lodash/4.17.21
+  moment: registry.npmmirror.com/moment/2.29.1
   pinia: registry.npmmirror.com/pinia/2.0.12_vue@3.2.31
   sass: registry.npmmirror.com/sass/1.32.13
   sass-loader: registry.npmmirror.com/sass-loader/12.6.0_sass@1.32.13+webpack@5.0.0
@@ -1580,6 +1586,15 @@ packages:
     name: eastasianwidth
     version: 0.2.0
     dev: true
+
+  registry.npmmirror.com/echarts/5.3.1:
+    resolution: {integrity: sha512-nWdlbgX3OVY0hpqncSvp0gDt1FRSKWn7lsWEH+PHmfCuvE0QmSw17pczQvm8AvawnLEkmf1Cts7YwQJZNC0AEQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/echarts/-/echarts-5.3.1.tgz}
+    name: echarts
+    version: 5.3.1
+    dependencies:
+      tslib: registry.npmmirror.com/tslib/2.3.0
+      zrender: registry.npmmirror.com/zrender/5.3.1
+    dev: false
 
   registry.npmmirror.com/editor/1.0.0:
     resolution: {integrity: sha512-SoRmbGStwNYHgKfjOrX2L0mUvp9bUVv0uPppZSOMAntEbcFtoC3MKF5b3T6HQPXKIV+QGY3xPO3JK5it5lVkuw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/editor/-/editor-1.0.0.tgz}
@@ -3226,6 +3241,12 @@ packages:
     hasBin: true
     dev: false
 
+  registry.npmmirror.com/moment/2.29.1:
+    resolution: {integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/moment/-/moment-2.29.1.tgz}
+    name: moment
+    version: 2.29.1
+    dev: false
+
   registry.npmmirror.com/ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ms/-/ms-2.1.2.tgz}
     name: ms
@@ -4300,6 +4321,12 @@ packages:
     version: 1.14.1
     dev: true
 
+  registry.npmmirror.com/tslib/2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz}
+    name: tslib
+    version: 2.3.0
+    dev: false
+
   registry.npmmirror.com/tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tslib/-/tslib-2.3.1.tgz}
     name: tslib
@@ -4709,3 +4736,11 @@ packages:
     name: yocto-queue
     version: 0.1.0
     engines: {node: '>=10'}
+
+  registry.npmmirror.com/zrender/5.3.1:
+    resolution: {integrity: sha512-7olqIjy0gWfznKr6vgfnGBk7y4UtdMvdwFmK92vVQsQeDPyzkHW1OlrLEKg6GHz1W5ePf0FeN1q2vkl/HFqhXw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/zrender/-/zrender-5.3.1.tgz}
+    name: zrender
+    version: 5.3.1
+    dependencies:
+      tslib: registry.npmmirror.com/tslib/2.3.0
+    dev: false
