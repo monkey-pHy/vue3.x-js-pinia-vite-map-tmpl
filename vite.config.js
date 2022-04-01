@@ -2,7 +2,7 @@
  * @Description:
  * @Author:
  * @Date: 2022-03-31 16:38:17
- * @LastEditTime: 2022-04-01 17:18:31
+ * @LastEditTime: 2022-04-01 17:21:51
  * @LastEditors: PengHeyan
  * @Usage:
  */
@@ -51,6 +51,7 @@ export default defineConfig(({ command, mode }) => {
         "@tools": resolve(__dirname, "./src/tools"),
         "@store": resolve(__dirname, "./src/store"),
       },
+      extensions: [".js", ".ts", ".jsx", ".tsx", ".json", ".vue"],
     },
     //打包相关配置
     build: {
